@@ -1,0 +1,18 @@
+I"(function() {
+  var CarrierWaveCropper;
+
+  jQuery(function() {
+    return new CarrierWaveCropper();
+  });
+
+  CarrierWaveCropper = (function() {
+    function CarrierWaveCropper() {
+      $('#user_avatar_cropbox').Jcrop;
+    }
+
+    return CarrierWaveCropper;
+
+  })();
+
+}).call(this);
+:ET
