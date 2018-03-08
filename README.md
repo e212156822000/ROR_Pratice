@@ -1,24 +1,42 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction(介紹)
 
-Things you may want to cover:
+其實是我用來練習Ruby on Rails套件的一個簡易網站
+練習的套件有：
 
-* Ruby version
+- kaminari
+- searchkick
+- gmaps4rails
 
-* System dependencies
+... 等等
 
-* Configuration
+主要畫面有
 
-* Database creation
+/users
+可以見到kaminari、searchkick的效果
 
-* Database initialization
+/map
+可以見到gmaps4rails的效果
 
-* How to run the test suite
+## Usage(用法)
 
-* Services (job queues, cache servers, search engines, etc.)
+Step 1: Download the project
 
-* Deployment instructions
+`git clone git@github.com:e212156822000/ruby_pratice.git`
 
-* ...
+Step 2: move to project directory
+
+`cd ruby_practice/`
+
+Step 3: Run the project
+
+`docker-compose up`
+
+Step 4: Visit it on localhost:5000
+
+## dependencies 
+
+- Ruby 2.4.3
+- Rails 6.0.6
+- Database Postgres 9.6
