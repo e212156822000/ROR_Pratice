@@ -6,38 +6,31 @@ services:
       - .:/ruby_practice/db
   web:
     build: .
-    command: rails server -p 5000 -b 0.0.0.0
-    volumes:
-      - .:/ruby_practice
+    command: rails server -p 5000 -b '0.0.0.0'
     ports:
       - "5000:5000"
+    volumes:
+      - .:/ruby_practice
     links:
       - db
       - elasticsearch
-    depends_on:
-      - db
-      - elasticsearch
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
   elasticsearch:
     image: elasticsearch
+    ports:
+      - "9200:9200"
     environment:
       - bootstrap.memory_lock=true
-      #cd /etc/elasticsearch/ to see settings
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.security.enabled=false
       - network.host=0.0.0.0
       - cluster.name=elasticsearch
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "http.host=0.0.0.0"
+      - "transport.host=127.0.0.1"
     ulimits:
       memlock:
         soft: -1
         hard: -1
     volumes:  
       - /usr/share/elasticsearch/data
-    ports:
-      - 9200:9200
-      - 9300:9300
-  kibana:
-    image: kibana
-    links:
-      - elasticsearch
-    ports:
-      - 5601:5601
-  

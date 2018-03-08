@@ -9,6 +9,8 @@ end
 gem 'rails', '~> 5.0.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# Use Puma as the app server
+gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -30,8 +32,6 @@ gem 'carrierwave'
 gem 'carrierwave-crop'
 gem 'gmaps4rails'
 gem 'kaminari'
-gem 'elasticsearch-model'
-gem 'elasticsearch-rails'
 gem 'searchkick'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
