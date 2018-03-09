@@ -17,10 +17,11 @@ AIzaSyAgb-KYjtpjZ54LVrjo8_Sia1Ff1czDm8w"></script>
   	<h1>Demo Map</h1>
   	<div style='width: 800px;'>
   		<div id="geolocation" style='width: 800px; height: 400px;'></div>
-	</div>
+	  </div>
 
 
     <%= yield %>
+    <%= "Environment: #{Rails.env}" %>
   </body>
   <script type="text/javascript">
   	map_center = { lat: 24.9685473, lng: 121.1924945 }

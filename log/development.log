@@ -9583,3 +9583,162 @@ Processing by SearchController#search as HTML
 Completed 200 OK in 1606ms (Views: 123.4ms | Searchkick: 772.5ms | ActiveRecord: 3.1ms)
 
 
+Started GET "/users" for 140.115.8.52 at 2018-03-08 03:46:48 +0000
+Cannot render console from 140.115.8.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (23.0ms)
+  Rendered search/_form.html.erb (0.9ms)
+Completed 200 OK in 307ms (Views: 287.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 140.115.8.52 at 2018-03-08 03:46:50 +0000
+Cannot render console from 140.115.8.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/bundle/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 24ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 140.115.8.52 at 2018-03-08 08:47:58 +0000
+Cannot render console from 140.115.8.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (23.6ms)
+  Rendered search/_form.html.erb (1.0ms)
+Completed 200 OK in 406ms (Views: 379.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/map" for 140.115.8.52 at 2018-03-08 08:48:03 +0000
+Cannot render console from 140.115.8.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MapController#map as HTML
+  Rendering map/map.html.erb within layouts/application
+  Rendered map/map.html.erb within layouts/application (102.7ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::RAILS_ENV):
+    21: 
+    22: 
+    23:     <%= yield %>
+    24:     <%= "Environment: #{RAILS_ENV}" %>
+    25:   </body>
+    26:   <script type="text/javascript">
+    27:   	map_center = { lat: 24.9685473, lng: 121.1924945 }
+  
+app/views/map/map.html.erb:24:in `_app_views_map_map_html_erb__2464231534100978066_70131380262360'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.8ms)
+Started GET "/map" for 140.115.8.52 at 2018-03-08 08:48:47 +0000
+Cannot render console from 140.115.8.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MapController#map as HTML
+  Rendering map/map.html.erb within layouts/application
+  Rendered map/map.html.erb within layouts/application (64.0ms)
+  Rendered search/_form.html.erb (0.9ms)
+Completed 200 OK in 92ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 140.115.8.52 at 2018-03-08 08:58:22 +0000
+Cannot render console from 140.115.8.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (6.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (23.7ms)
+  Rendered search/_form.html.erb (0.9ms)
+Completed 200 OK in 430ms (Views: 410.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&term=12" for 140.115.8.52 at 2018-03-08 08:58:26 +0000
+Cannot render console from 140.115.8.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchController#search as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"12"}
+  [1m[33mUser Search (1736.2ms)[0m  curl http://elasticsearch:9200/users_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"_all":{"query":"12","boost":10,"operator":"and","analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"12","boost":10,"operator":"and","analyzer":"searchkick_search2"}}},{"match":{"_all":{"query":"12","boost":1,"operator":"and","analyzer":"searchkick_search","fuzziness":1,"prefix_length":0,"max_expansions":3,"fuzzy_transpositions":true}}},{"match":{"_all":{"query":"12","boost":1,"operator":"and","analyzer":"searchkick_search2","fuzziness":1,"prefix_length":0,"max_expansions":3,"fuzzy_transpositions":true}}}]}},"size":1000,"from":0,"timeout":"11s","_source":false}'
+  Rendering search/search.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (21, 1, 2)[0m
+  Rendered search/search.html.erb within layouts/application (4.5ms)
+  Rendered search/_form.html.erb (1.1ms)
+Completed 200 OK in 2908ms (Views: 140.6ms | Searchkick: 1736.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&term=12" for 140.115.8.52 at 2018-03-08 08:59:47 +0000
+Cannot render console from 140.115.8.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearchController#search as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"12"}
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to elasticsearch:9200 (Connection refused - connect(2) for "elasticsearch" port 9200)):
+  
+app/controllers/search_controller.rb:6:in `search'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.9ms)
+Started GET "/users" for 140.115.8.52 at 2018-03-08 08:59:56 +0000
+Cannot render console from 140.115.8.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (19.9ms)
+  Rendered search/_form.html.erb (0.8ms)
+Completed 200 OK in 390ms (Views: 386.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&term=12" for 140.115.8.52 at 2018-03-08 09:00:01 +0000
+Cannot render console from 140.115.8.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchController#search as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"12"}
+  [1m[33mUser Search (1023.9ms)[0m  curl http://elasticsearch:9200/users_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"_all":{"query":"12","boost":10,"operator":"and","analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"12","boost":10,"operator":"and","analyzer":"searchkick_search2"}}},{"match":{"_all":{"query":"12","boost":1,"operator":"and","analyzer":"searchkick_search","fuzziness":1,"prefix_length":0,"max_expansions":3,"fuzzy_transpositions":true}}},{"match":{"_all":{"query":"12","boost":1,"operator":"and","analyzer":"searchkick_search2","fuzziness":1,"prefix_length":0,"max_expansions":3,"fuzzy_transpositions":true}}}]}},"size":1000,"from":0,"timeout":"11s","_source":false}'
+  Rendering search/search.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (21, 1, 2)[0m
+  Rendered search/search.html.erb within layouts/application (4.4ms)
+  Rendered search/_form.html.erb (1.6ms)
+Completed 200 OK in 1297ms (Views: 81.8ms | Searchkick: 1023.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&term=12213" for 140.115.8.52 at 2018-03-08 09:00:07 +0000
+Cannot render console from 140.115.8.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchController#search as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"12213"}
+  [1m[33mUser Search (1362.3ms)[0m  curl http://elasticsearch:9200/users_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"_all":{"query":"12213","boost":10,"operator":"and","analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"12213","boost":10,"operator":"and","analyzer":"searchkick_search2"}}},{"match":{"_all":{"query":"12213","boost":1,"operator":"and","analyzer":"searchkick_search","fuzziness":1,"prefix_length":0,"max_expansions":3,"fuzzy_transpositions":true}}},{"match":{"_all":{"query":"12213","boost":1,"operator":"and","analyzer":"searchkick_search2","fuzziness":1,"prefix_length":0,"max_expansions":3,"fuzzy_transpositions":true}}}]}},"size":1000,"from":0,"timeout":"11s","_source":false}'
+  Rendering search/search.html.erb within layouts/application
+  Rendered search/search.html.erb within layouts/application (0.7ms)
+  Rendered search/_form.html.erb (1.0ms)
+Completed 200 OK in 1431ms (Views: 65.9ms | Searchkick: 1362.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&term=%E5%AD%B8%E6%A0%A1" for 140.115.8.52 at 2018-03-08 09:00:14 +0000
+Cannot render console from 140.115.8.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchController#search as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"學校"}
+  [1m[33mUser Search (323.3ms)[0m  curl http://elasticsearch:9200/users_development/_search?pretty -d '{"query":{"dis_max":{"queries":[{"match":{"_all":{"query":"學校","boost":10,"operator":"and","analyzer":"searchkick_search"}}},{"match":{"_all":{"query":"學校","boost":10,"operator":"and","analyzer":"searchkick_search2"}}},{"match":{"_all":{"query":"學校","boost":1,"operator":"and","analyzer":"searchkick_search","fuzziness":1,"prefix_length":0,"max_expansions":3,"fuzzy_transpositions":true}}},{"match":{"_all":{"query":"學校","boost":1,"operator":"and","analyzer":"searchkick_search2","fuzziness":1,"prefix_length":0,"max_expansions":3,"fuzzy_transpositions":true}}}]}},"size":1000,"from":0,"timeout":"11s","_source":false}'
+  Rendering search/search.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (2, 1, 21, 4, 3)[0m
+  Rendered search/search.html.erb within layouts/application (5.4ms)
+  Rendered search/_form.html.erb (0.9ms)
+Completed 200 OK in 440ms (Views: 112.8ms | Searchkick: 323.3ms | ActiveRecord: 0.3ms)
+
+

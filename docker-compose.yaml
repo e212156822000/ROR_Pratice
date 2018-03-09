@@ -26,8 +26,6 @@ services:
       - network.host=0.0.0.0
       - cluster.name=elasticsearch
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-      - "http.host=0.0.0.0"
-      - "transport.host=127.0.0.1"
     ulimits:
       memlock:
         soft: -1
